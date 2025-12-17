@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <h1>Number Guessing Game</h1>
+      <div class="content flex">
+        <label id="title">Guess a number from 1 - 50</label>
+        <input type="number" value="0" id="userInput" />
+        <div class="btns flex">
+          <button id="playBtn">Play</button>
+          <button id="resetBtn">Retry</button>
+        </div>
+        <p id="chances">You have 5 chances</p>
+        <div class="results">
+          <p id="choice"></p>
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
