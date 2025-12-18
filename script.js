@@ -24,6 +24,10 @@ function guessNumber() {
   } else {
     result.textContent = `Please enter a valid number!`;
   }
+  if (count === 0) {
+    chances.textContent === "You have 0 chances left. Try Again";
+    playBtn.style.display = "none";
+  }
 }
 
 function resetGame() {
@@ -31,6 +35,7 @@ function resetGame() {
   result.textContent = "";
   chances.textContent = "You have 5 chances";
   choice.textContent = "";
+  playBtn.style.display = "block";
 }
 
 playBtn.addEventListener("click", guessNumber);
